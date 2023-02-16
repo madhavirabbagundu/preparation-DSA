@@ -1,7 +1,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
-class HelloWorld {
+class HelloWorld1 {
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
