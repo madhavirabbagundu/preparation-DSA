@@ -15,8 +15,6 @@ function functionalScope(){
 console.log(a)
 
 functionalScope()
-
-
 {
     let d = 1;
     const a1 = 20
