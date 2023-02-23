@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is a data fectching</h1>
+    <h5 id = "container"></h5>
+</body>
+</html>
+<script>
+    fetch(`https://fakestoreapi.com/products`)
+    .then((res)=>res.json())
+    .then((data)=>output(data))
+function output(pro){
+    console.log(pro)
+
+    pro.forEach(element => {
+        var div = document.createElement('div')
+
+        var title = document.createElement('p')
+        title.innerHTML = element.title;
+
+        var img = document.createElement('img')
+        img.src = element.image;
+
+        div.append(title,img)
+        container.append(div)
+    });
+
+}
+</script>
